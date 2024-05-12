@@ -10,8 +10,8 @@ const password = useRef();
 const handleSubmit = (e)=>{
     e.preventDefault();
 }
-let userName = username.current.value;
-let passWord =  password.current.value;
+let userName = username.current;
+let passWord =  password.current;
 
 if(userName === "login20" && passWord === "user1234"){
   localStorage.setItem("user" , true)
